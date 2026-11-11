@@ -8,19 +8,21 @@
 </head>
 
 <body>
-    <form action="07.php" method="get">
-        <div>
-            <input type="text" name="nombre">
-            <label>Nombre</label>
-        </div>
-        <div>
-            <input type="text" name="apellidos">
-            <label>Apellidos</label>
-        </div>
-        <div>
-            <button>Enviar</button>
-        </div>
-    </form>
+    <div>
+        <form action="07.php" method="get">
+            <div>
+                <input type="text" name="nombre">
+                <label>Nombre</label>
+            </div>
+            <div>
+                <input type="text" name="apellidos">
+                <label>Apellidos</label>
+            </div>
+            <div>
+                <button>Enviar</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
