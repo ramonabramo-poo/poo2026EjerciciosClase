@@ -18,6 +18,10 @@
     <p>
         <?= "hola  mundo"; ?>
     </p>
+
+    <?php
+    var_dump("hola mundo");
+    ?>
 </body>
 
 </html>
