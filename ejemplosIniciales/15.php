@@ -12,3 +12,29 @@
 // 5) Si se cumple: asignar "es par" a la variable $mensaje.
 // 6) Si no se cumple: asignar "es impar" a la variable $mensaje.
 // 7) Mostrar por pantalla el número y su estado.
+
+// constantes
+define('MINIMO', -10);
+const MAXIMO = 10;
+
+// declarar e inicializar
+$numero = 0;
+$mensaje = '';
+$resto = 0;
+
+// entrada
+$numero = random_int(MINIMO, MAXIMO);
+
+$resto = $numero % 2;
+
+
+if ($resto == 0) {
+    $mensaje = 'es par';
+} else {
+    $mensaje = 'es impar';
+}
+?>
+<ul>
+    <li>Numero: <?= $numero ?></li>
+    <li>Estado: <?= $mensaje ?></li>
+</ul>
