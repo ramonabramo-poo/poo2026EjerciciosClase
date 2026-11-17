@@ -14,3 +14,30 @@ Es decir:
 Mostrar la velocidad en el li correspondiente manteniendo el texto que se encuentra en el li.
 Mostrar el mensaje en el li correspondiente.
 */
+
+const MINIMO = 80;
+const MAXIMO = 180;
+
+
+// declaracion e inicializacion
+$velocidad = 0;
+$mensajeSancion = '';
+
+// entradas
+
+$velocidad = random_int(MINIMO, MAXIMO);
+
+// procesamiento
+if ($velocidad > 120) {
+    $mensajeSancion = 'Exceso de velocidad: Multa en camino';
+} elseif ($velocidad === 120) {
+    $mensajeSancion = 'Velocidad maxima permitida';
+} else {
+    $mensajeSancion = 'Velocidad permitida';
+}
+
+?>
+<ul>
+    <li><?= $velocidad ?> km/h</li>
+    <li><?= $mensajeSancion ?></li>
+</ul>
