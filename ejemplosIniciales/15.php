@@ -25,8 +25,8 @@ $resto = 0;
 // entrada
 $numero = random_int(MINIMO, MAXIMO);
 
-$resto = $numero % 2;
 
+$resto = $numero % 2;
 
 if ($resto == 0) {
     $mensaje = 'es par';
