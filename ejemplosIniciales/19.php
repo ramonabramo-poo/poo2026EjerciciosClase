@@ -36,3 +36,44 @@ ALGORITMO
 4) Comprobar si el dia introducido es 1, 2, 3, 4, 5, 6 o 7
 5) Mostrar el dia introducido y el dia en texto
 */
+
+// declarar e inicializar
+$dia = 0;
+$salida = '';
+
+// entradas
+$dia = random_int(1, 9);
+
+// procesamiento
+switch ($dia) {
+    case 1:
+        $salida = 'Lunes';
+        break;
+    case 2:
+        $salida = 'Martes';
+        break;
+    case 3:
+        $salida = 'Miercoles';
+        break;
+    case 4:
+        $salida = 'Jueves';
+        break;
+    case 5:
+        $salida = 'Viernes';
+        break;
+    case 6:
+        $salida = 'Sabado';
+        break;
+    case 7:
+        $salida = 'Domingo';
+        break;
+    default:
+        $salida = 'No es un dia de la semana';
+        break;
+}
+
+?>
+<ul>
+    <li>Dia introducido: <?= $dia ?></li>
+    <li>Dia en texto: <?= $salida ?></li>
+</ul>
