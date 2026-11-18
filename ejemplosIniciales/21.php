@@ -1,9 +1,16 @@
 <?php
 // operador ternario
 
-$nota=0;
-$resultado='';
+$nota = 0;
+$resultado = '';
 
-$nota=random_int(0,10);
+$nota = random_int(0, 10);
 
-$resultado = ($nota>=5) ? 'Aprobado' : 'Suspenso';
+$resultado = ($nota >= 5) ? 'Aprobado' : 'Suspenso';
+
+?>
+
+<ul>
+    <li>Nota: <?= $nota ?> </li>
+    <li>Resultado: <?= $resultado ?></li>
+</ul>
