@@ -27,6 +27,10 @@ for ($c = 0; $c < $longitud; $c++) {
     $salida .= "<div>{$dias[$c]}</div>";
 }
 
+
+
+
+
 ?>
 
 <div>
