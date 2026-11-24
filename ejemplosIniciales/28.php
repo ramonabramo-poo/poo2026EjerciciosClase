@@ -45,16 +45,17 @@ $alumnos = [
         // foreach(array_keys($alumnos[0]) as $campo) {
         //     echo "<th>$campo</th>";
         // }
-
-
-
         ?>
     </tr>
-    <?php foreach ($alumnos as $alumno): ?>
-        <tr>
-            <?php foreach ($campos as $campo): ?>
-                <td><?php echo $alumno[$campo]; ?></td>
-            <?php endforeach; ?>
-        </tr>
-    <?php endforeach; ?>
+    <?php
+    foreach ($alumnos as $alumno) {
+        // moviendo por los registros (alumnos)
+        echo "<tr>";
+        foreach ($alumno as $valor) {
+            // mostrandos los datos de cada alumno
+            echo "<td>{$valor}</td>";
+        }
+        echo "</tr>";
+    }
+    ?>
 </table>
