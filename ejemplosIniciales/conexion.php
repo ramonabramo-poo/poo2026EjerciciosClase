@@ -7,7 +7,7 @@ $conexion = mysqli_connect('localhost', 'root');
 mysqli_select_db($conexion, 'curso_web');
 
 // colocando mi consulta como string
-$consulta = 'select * from alumnos';
+// $consulta = 'select * from alumnos';
 
 // ejecutando la consulta sobre la conexion
 $resultado = mysqli_query($conexion, $consulta);
